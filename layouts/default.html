@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Verapax Solutions Inc. <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Signika+Negative:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div class="centre_in_browser content">
+      <div id="sidebar">
+        <img src="/verapax.png">
+        <ul>
+          <li><%= link_to_unless_current("Home", "/") %></li>
+          <li><%= link_to_unless_current("About Us", "/about_us/") %></li>
+          <li><%= link_to_unless_current("Monitoring and Evaluation", "/monitoring_and_evaluation/") %></li>
+          <li><%= link_to_unless_current("Organizational Development", "/organizational_development/") %></li>
+          <li><%= link_to_unless_current("Presentations and Communications", "/presentations_and_communications/") %></li>
+          <li><%= link_to_unless_current("Project Management", "/project_management/") %></li>
+          <li><%= link_to_unless_current("Contact Us", "/contact/") %></li>
+        </ul>
+      </div>
+      <div id="main">
+        <%= yield %>
+      </div>
+      <div id="right-sidebar">
+        <h2>Member of</h2>
+        <p class="vertical_align_children">
+          <a href="http://www.preval.org">
+          <img border="0" src="/preval.png" alt="www.preval.org">Preval
+          </a>
+        </p>
+        <p>
+          <a href="http://www.femconsult.org"> 				
+          <img border="0" src="/femconsult_logo.jpg" alt="www.femconsult.org">
+          </a>
+        </p>
+        <p>
+          <a href="http://www.evaluationcanada.ca/">Canadian Evaluation Society</a>
+        </p>
+        <p>
+          <a href="http://www.ideas-int.org">
+          <img border="0" src="/ideas.jpg" height="131" width="153" alt="www.ideas-int.org">
+          </a>
+        </p>
+      </div>
+      <br class="clear"/>
+      <div class="footer">
+        <p>
+          This site was built by Jade Systems Inc using
+          <%= link_to("nanoc", "http://nanoc.ws", target: "_blank") %>.
+        </p>
+      </div>
+    </div>
+    <script>
+<!--    Analytics goes here.-->
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1728165-4"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+    </script>
+  </body>
+</html>

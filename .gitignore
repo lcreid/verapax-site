@@ -5,3 +5,8 @@ output/
 
 # Temporary file directory
 tmp/
+
+.sass-cache/
+Guardfile
+crash.log
+get-verapax.rb
