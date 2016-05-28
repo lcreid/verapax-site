@@ -17,13 +17,22 @@
       <div id="sidebar">
         <img src="/verapax.png">
         <ul>
-          <li><%= link_to_unless_current("Home", "/") %></li>
-          <li><%= link_to_unless_current("About Us", "/about_us/") %></li>
-          <li><%= link_to_unless_current("Monitoring and Evaluation", "/monitoring_and_evaluation/") %></li>
-          <li><%= link_to_unless_current("Organizational Development", "/organizational_development/") %></li>
-          <li><%= link_to_unless_current("Presentations and Communications", "/presentations_and_communications/") %></li>
-          <li><%= link_to_unless_current("Project Management", "/project_management/") %></li>
-          <li><%= link_to_unless_current("Contact Us", "/contact/") %></li>
+          <li class="top-border"><%= link_to_unless_current("Home", "/") %></li>
+          <li class="top-border"><%= link_to_unless_current("About Us", "/about_us/") %></li>
+          <li class="top-border"><%= link_to_unless_current("Monitoring and Evaluation", "/monitoring_and_evaluation/") %></li>
+          <li class="top-border"><%= link_to_unless_current("Organizational Development", "/organizational_development/") %></li>
+          <li class="top-border"><%= link_to_unless_current("Presentations and Communications", "/presentations_and_communications/") %></li>
+          <li class="top-border"><%= link_to_unless_current("Project Management", "/project_management/") %></li>
+          <li class="top-border"><%= link_to_unless_current("Contact Us", "/contact/") %></li>
+          <li class="no-border">
+            <a href="http://twitter.com/myverapax" target="_blank">
+            <img border="0" src="/TwitterLogo.png" height="48" width="48" alt="twitter.com/myverpax">
+            </a>
+          </li>
+          <li class="no-border">
+            <a href="http://linkedin.com/in/angelacontreraschavez" target="_blank">
+              <img border="0" src="/Logo-2C-28px-R.png" alt="linkedin.com/in/angelacontreraschavez">
+          </li>
         </ul>
       </div>
       <div id="main">
@@ -37,7 +46,7 @@
           </a>
         </p>
         <p>
-          <a href="http://www.femconsult.org"> 				
+          <a href="http://www.femconsult.org">
           <img border="0" src="/femconsult_logo.jpg" alt="www.femconsult.org">
           </a>
         </p>
@@ -53,7 +62,9 @@
       <br class="clear"/>
       <div class="footer">
         <p>
-          This site was built by Jade Systems Inc using
+          This site was built by
+          <%= link_to("Jade Systems Inc", "http://jadesystems.ca", target: "_blank") %>
+           using
           <%= link_to("nanoc", "http://nanoc.ws", target: "_blank") %>.
         </p>
       </div>

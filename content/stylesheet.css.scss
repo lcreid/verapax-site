@@ -36,8 +36,8 @@ body {
   background: $browser-background;
 }
 
-.content { 
-  background: $content-background; 
+.content {
+  background: $content-background;
   padding: 40px 20px 20px 0;
   box-shadow: 2px 2px 3px $box-shadow;
 //  position: relative;
@@ -69,21 +69,21 @@ a:hover {
 
   h1 {
     @extend %heading-font;
-    
+
     font-size: $font-size + 6px;
     font-weight: 700;
   }
 
   h2 {
     @extend %heading-font;
-    
+
     font-size: $font-size + 4px;
     font-weight: 700;
   }
 
   h3 {
     @extend %heading-font;
-    
+
     font-size: $font-size + 2px;
     font-weight: 700;
   }
@@ -138,9 +138,9 @@ a:hover {
 
   //  margin: 20px 0;
     ul {
-      li { 
+      li {
         font-weight: normal;
-        font-size: $font-size - 1px; 
+        font-size: $font-size - 1px;
       }
     }
 
@@ -159,12 +159,21 @@ a:hover {
   padding: 0 0 0 10px;
 
   border-left: 1px solid #ccc;
-  
+
   text-align: center;
-  
+
   p {
     padding: 5px 0;
   }
+}
+
+.no-border {
+  border-style: none;
+}
+
+.top-border {
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
 .vertical_align_children * { vertical-align: middle; }
@@ -181,7 +190,7 @@ a:hover {
 
 .footer {
   margin: 20px 0 10px 0;
-  
+
   p {
     font-size: $font-size - 2px;
     font-style: italic;
