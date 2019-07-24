@@ -1,5 +1,10 @@
-# For projects using nanoc (http://nanoc.stoneship.org/)
+_site
+.sass-cache
+.jekyll-metadata
 
+.vagrant
+
+# Kept from Nanoc site:
 # Default location for output, needs to match output_dir's value found in config.yaml
 output/
 
