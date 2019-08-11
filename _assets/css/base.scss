@@ -1,0 +1,29 @@
+body {
+  padding-top: $navbar-height;
+  font-size: $font-size-base;
+}
+
+h1, h2, .h1, .h2 {
+  font-weight: bold;
+}
+
+html {
+  font-size: 12px;
+}
+
+label.required:after {
+  content: " *";
+  @extend .text-danger;
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: 16px;
+  }
+}

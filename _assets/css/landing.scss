@@ -1,0 +1,42 @@
+.contact-us-btn {
+	color: $primary;	// I would have liked to figure out how to do this in Bootstrap.
+	font-weight: 500;
+  height: 4rem;
+	margin-top: 2.125rem;
+  width: 16rem;
+  border-radius: 2rem;
+  // background-color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+.content {
+	@extend .mx-auto;
+	@extend .container;
+}
+
+.landing {
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	@extend .mx-auto;
+}
+
+@include media-breakpoint-up(xl) {
+	.landing {
+		height: 800px;
+		width: 1440px;
+		margin-bottom: 190px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.content {
+		// color: #FFFFFF;
+		// height: 26.375rem;
+		// height: 12.75rem; // Original for margin.
+		// line-height: 5.375rem;
+		// padding-top: 13.625rem;
+		width: 51.5rem;
+	}
+}
