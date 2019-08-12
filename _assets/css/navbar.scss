@@ -1,0 +1,53 @@
+// .nav-item {
+//   @extend .h-100;
+// }
+
+.navbar {
+  font-family: $headings-font-family;
+	@extend .mx-auto;
+
+	.navbar-nav {
+		.nav-item {
+			font-size: $nav-and-footer-font;
+			line-height: 1.25rem;
+		}
+	}
+}
+
+// TODO: Remove if I don't use bottom navbar.
+.navbar-bottom {
+  @extend .d-none;
+  // NOTE: This must be the same as the size at which the main navbar collapses.
+  @extend .d-lg-flex;
+}
+
+.navbar-top {
+  // This has to be min-height, not just height, so that expanding the collapsed
+  // menu on smaller devices has the right background colour.
+	min-height: $navbar-height;
+}
+
+@include media-breakpoint-up(md) {
+	.navbar-nav {
+		.nav-item {
+			// Center horizontally and vertically
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+}
+
+// TODO: Do I have breakpoints???
+@include media-breakpoint-up(xl) {
+	.navbar {
+		width: 1440px;
+	}
+
+	.navbar-nav {
+		width: 613px; // Per Alex's spec for desktop.
+		// @extend .d-lg-flex;
+		// @extend .align-items-center;
+	}
+}

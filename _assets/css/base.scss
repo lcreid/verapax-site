@@ -16,6 +16,12 @@ label.required:after {
   @extend .text-danger;
 }
 
+.underline {
+  height: 4px;
+  width: 45px;
+  background-color: $primary;
+}
+
 @include media-breakpoint-up(md) {
   html {
     font-size: 14px;
