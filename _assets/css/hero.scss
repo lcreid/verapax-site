@@ -9,6 +9,8 @@
 	// The following accounts for the fixed top navbar.
 	// margin-top: $navbar-height;
 	@extend .mx-auto;
+	color: white;
+	@extend .bg-primary;
 }
 
 .hero-background {
@@ -50,7 +52,6 @@
 @include media-breakpoint-up(md) {
 	.hero {
 		height: 25rem;
-		margin-bottom: 11.875rem;
 		padding-bottom: 0;
 	}
 
@@ -58,7 +59,6 @@
 		// border: 1px solid #979797;
 		background-color: #D8D8D8;
 		height: 50rem;
-		margin-bottom: 11.875rem;
 	}
 
 	.hero-spot-the-trends-that {
