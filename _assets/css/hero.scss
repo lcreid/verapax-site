@@ -3,7 +3,6 @@
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 2rem;
-	padding-bottom: 2rem;
 	// height: 50rem;
 	// margin-bottom: 11.875rem;
 	// The following accounts for the fixed top navbar.
@@ -11,42 +10,12 @@
 	@extend .mx-auto;
 	color: white;
 	@extend .bg-primary;
-}
 
-.hero-background {
-}
-
-.hero-overlay {
-	height: 800px;
-	width: 1440px;
-	opacity: 0.8;
-	background-color: $primary;
-}
-
-.hero-rectangle {
-	// border: 1px solid #979797;
-	background-color: #D8D8D8;
-	// margin-bottom: 11.875rem;
-	@extend .px-0; // To fit with Alex's spec.
-}
-
-.hero-spot-the-trends-that {
-	color: #FFFFFF;
-	// height: 12.75rem;
-	line-height: 5.375rem;
-	padding-top: 2rem;
-	@extend .h1;
-}
-
-.hero-we-can-help-you-harn {
-	color: #FFFFFF;
-	// height: 5rem;
-	// width: 44rem;
-	// margin-top: -0.25rem;
-	@extend .lead;
-	// font-family: "Istok Web";
-	// font-size: 26px;
-	// line-height: 40px;
+	&-content {
+		@extend .content;
+		padding-bottom: 5rem;
+		padding-top: 5rem;
+	}
 }
 
 @include media-breakpoint-up(md) {
@@ -54,53 +23,10 @@
 		height: 25rem;
 		padding-bottom: 0;
 	}
-
-	.hero-rectangle {
-		// border: 1px solid #979797;
-		background-color: #D8D8D8;
-		height: 50rem;
-	}
-
-	.hero-spot-the-trends-that {
-		color: #FFFFFF;
-		height: 26.375rem;
-		// height: 12.75rem; // Original for margin.
-		line-height: 5.375rem;
-		padding-top: 13.625rem;
-		width: 51.5rem;
-	}
-
-	.hero-we-can-help-you-harn {
-		color: #FFFFFF;
-		height: 5rem;
-		width: 44rem;
-		margin-top: -0.25rem;
-		// font-family: "Istok Web";
-		// font-size: 26px;
-		// line-height: 40px;
-	}
 }
 
 @include media-breakpoint-up(xl) {
 	.hero {
 		width: 1440px;
-	}
-
-	.hero-rectangle {
-		width: 1440px;
-	}
-
-	.hero-spot-the-trends-that {
-		height: 431px;
-		// height: 204px; Original for margin.
-		width: 825px;
-		padding-top: 217px;
-		line-height: 86px;
-	}
-
-	.hero-we-can-help-you-harn {
-		height: 80px;
-		width: 704px;
-		margin-top: -5px;
 	}
 }
