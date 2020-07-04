@@ -1,14 +1,8 @@
 _site
 .sass-cache
 .jekyll-metadata
-
 .jekyll-cache
-
 .vagrant
-
-# Kept from Nanoc site:
-# Default location for output, needs to match output_dir's value found in config.yaml
-output/
 
 # Temporary file directory
 tmp/
@@ -17,3 +11,4 @@ tmp/
 Guardfile
 crash.log
 get-verapax.rb
+vendor

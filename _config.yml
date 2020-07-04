@@ -1,5 +1,12 @@
-# Welcome to Jekyll!
-#
+# To run from a remote Docker container definition:
+# export JEKYLL_VERSION=3.8.5
+# docker run -p 4000:4000 --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
+# Build it first for better start-up time?
+# docker build --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:$JEKYLL_VERSION
+
+# This was useful for Docker:
+# https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
+
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
@@ -21,8 +28,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: _amcontreras
+github_username:  lcreid
 
 # Build settings
 markdown: kramdown
@@ -34,13 +41,15 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - .gitignore
+  - .vagrant
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - output/
   - README.md
   - Vagrantfile
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - _site.old
