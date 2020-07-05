@@ -1,32 +1,40 @@
 .hero {
-	// background-image: url("");
-	background-size: cover;
-	background-position: center;
-	margin-bottom: 2rem;
-	// height: 50rem;
-	// margin-bottom: 11.875rem;
-	// The following accounts for the fixed top navbar.
-	// margin-top: $navbar-height;
-	@extend .mx-auto;
-	color: white;
-	@extend .bg-primary;
-
 	&-content {
 		@extend .content;
 		padding-bottom: 5rem;
 		padding-top: 5rem;
 	}
-}
 
-@include media-breakpoint-up(md) {
-	.hero {
-		height: 25rem;
-		padding-bottom: 0;
+	// From https://www.w3schools.com/howto/howto_css_hero_image.asp
+	&-image {
+		margin-bottom: 2rem;
+		@extend .mx-auto;
+		color: white;
+		@extend .bg-primary;
+
+		/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/pacaya.jpg");
+
+		/* Set a specific height */
+		// height: 50%;
+
+		/* Position and center the image to scale nicely on all screens */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
 	}
 }
 
-@include media-breakpoint-up(xl) {
-	.hero {
-		width: 1440px;
-	}
-}
+// @include media-breakpoint-up(md) {
+// 	.hero {
+// 		height: 25rem;
+// 		padding-bottom: 0;
+// 	}
+// }
+
+// @include media-breakpoint-up(xl) {
+// 	.hero {
+// 		width: 1440px;
+// 	}
+// }
