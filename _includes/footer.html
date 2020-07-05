@@ -1,10 +1,20 @@
-<div class="fixed-bottom bg-white">
-  <hr>
-  <footer class="text-center mb-2 footer-text">
-    This site was built by
-    <a href="https://jadesystems.ca">Jade Systems Inc</a>
-    using
-    <a href="https://jekyllrb.com">Jekyll</a>.
-    Layout and styling by <a href="https://getbootstrap.com">Bootstrap</a>.
+<div class="bg-primary text-white">
+  <footer class="text-center py-2">
+    <div class="d-sm-flex justify-content-around align-items-center py-2">
+      <div class="pb-2">
+        <div class="h3">Verapax</div>
+      </div>
+      <div class="pb-2">
+        <a href="https://twitter.com/{{ site.twitter_username }}" class="text-light">twitter</a><br/>
+        <a href="mailto:verapax@gmail.com" class="text-light">verapax@gmail.com</a>
+      </div>
+      <div class="py-2">
+        <a class="btn btn-sm btn-light" href="{{ site.baseurl }}{% link content/contact.html %}">Contact Us</a>
+      </div>
+    </div>
+    <div class="pb-2 footer-text">
+      © 2020 Verapax Inc. | Website by
+      <a href="https://jadesystems.ca" class="text-light">Jade Systems Inc</a>
+    </div>
   </footer>
 </div>

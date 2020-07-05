@@ -1,4 +1,8 @@
-.contact-us-btn {
+.btn {
+	border-radius: 2em;
+}
+
+.call-to-action-btn {
 	color: $primary;	// I would have liked to figure out how to do this in Bootstrap.
 	font-weight: 500;
   height: 4rem;
