@@ -5,8 +5,14 @@
         <div class="h3">Verapax</div>
       </div>
       <div class="pb-2">
-        <a href="https://twitter.com/{{ site.twitter_username }}" class="text-light">twitter</a><br/>
-        <a href="mailto:verapax@gmail.com" class="text-light">verapax@gmail.com</a>
+        <a href="https://twitter.com/{{ site.twitter_username }}" class="text-light">
+          <img src="{% link assets/images/twitter-brands.svg %}" alt="twitter" class="inline-icon">
+          {{ site.twitter_username }}
+        </a><br/>
+        <a href="mailto:verapax@gmail.com" class="text-light">
+          <img src="{% link assets/images/envelope-regular.svg %}" alt="e-mail" class="inline-icon">
+          {{ site.email }}
+        </a>
       </div>
       <div class="py-2">
         <a class="btn btn-sm btn-light" href="{% link content/contact.html %}">Contact Us</a>
