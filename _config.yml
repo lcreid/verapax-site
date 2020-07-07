@@ -1,55 +1,38 @@
 # To run from a remote Docker container definition:
 # export JEKYLL_VERSION=3.8.5
 # docker run -p 4000:4000 --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
-# Build it first for better start-up time?
-# docker build --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:$JEKYLL_VERSION
 
 # This was useful for Docker:
 # https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
 
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# This was useful for Bootstrap (although I still have to figure out stuff for myself):
+# https://simpleit.rocks/ruby/jekyll/tutorials/how-to-add-bootstrap-4-to-jekyll-the-right-way/
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Verapax
 email: verapax@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _amcontreras
 github_username:  lcreid
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
 exclude:
-  - .gitignore
-  - .vagrant
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
+  - LICENSE
+  - Makefile
   - README.md
+  - package.json
+  - package-lock.json
   - Vagrantfile
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - _site.old
+  - yarn.lock
+
+include:
+  - node_modules/jquery/dist/jquery.min.js
+  - node_modules/popper.js/dist/umd/popper.min.js
+  - node_modules/popper.js/dist/umd/popper.min.js.map
+  - node_modules/bootstrap/dist/js/bootstrap.min.js
+  - node_modules/bootstrap/dist/js/bootstrap.min.js.map

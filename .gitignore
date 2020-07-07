@@ -12,3 +12,4 @@ Guardfile
 crash.log
 get-verapax.rb
 vendor
+node_modules
