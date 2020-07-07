@@ -4,7 +4,7 @@
   border-radius: 100%;
 	@extend .d-flex;
 	background-color: #FFFFFF;
-	background-image: url("/assets/images/verapax.png");
+	background-image: url($baseurl + "/assets/images/verapax.png");
 	background-position-x: center;
 	background-position-y: 5px;
 	box-shadow: 0 2px 4px 0 rgba(33,37,41,0.1), 0 7px 14px 0 rgba(33,37,41,0.1);
