@@ -1,5 +1,6 @@
 .navbar {
   font-family: $headings-font-family;
+	@extend .mx-auto;
 
 	.navbar-nav {
 		.nav-item {
