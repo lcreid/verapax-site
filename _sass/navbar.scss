@@ -1,6 +1,5 @@
 .navbar {
   font-family: $headings-font-family;
-	@extend .mx-auto;
 
 	.navbar-nav {
 		.nav-item {
@@ -32,11 +31,5 @@
 @include media-breakpoint-up(xl) {
 	.navbar {
 		width: 1440px;
-	}
-
-	.navbar-nav {
-		width: 613px; // Per Alex's spec for desktop.
-		// @extend .d-lg-flex;
-		// @extend .align-items-center;
 	}
 }
