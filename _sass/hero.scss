@@ -13,7 +13,7 @@
 		@extend .bg-primary;
 
 		/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($baseurl + "/assets/images/pacaya.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($baseurl + "/assets/images/pacaya-1440x810.jpg");
 
 		/* Set a specific height */
 		// height: 50%;
