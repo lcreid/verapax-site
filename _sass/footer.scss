@@ -6,3 +6,13 @@
   height: 1em;
   filter: invert(100%);
 }
+
+.footer {
+  @extend .mx-auto;
+}
+
+@include media-breakpoint-up(xl) {
+	.footer {
+    width: 1440px;
+	}
+}
