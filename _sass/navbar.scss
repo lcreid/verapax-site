@@ -1,7 +1,3 @@
-// .nav-item {
-//   @extend .h-100;
-// }
-
 .navbar {
   font-family: $headings-font-family;
 	@extend .mx-auto;
@@ -12,13 +8,6 @@
 			line-height: 1.25rem;
 		}
 	}
-}
-
-// TODO: Remove if I don't use bottom navbar.
-.navbar-bottom {
-  @extend .d-none;
-  // NOTE: This must be the same as the size at which the main navbar collapses.
-  @extend .d-lg-flex;
 }
 
 .navbar-top {

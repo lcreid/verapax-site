@@ -3,9 +3,9 @@
 
 $baseurl:"{{ site.baseurl }}";
 
+@import "variables";
 @import "customize-bootstrap";
 @import "bootstrap/scss/bootstrap";
-@import "variables";
 @import "base";
 @import "footer";
 @import "landing";
