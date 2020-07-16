@@ -1,6 +1,9 @@
 body {
-  padding-top: $navbar-height;
   font-size: $font-size-base;
+  padding-top: $navbar-height;
+  // The next two lines keep the site from getting too wide on really big screens
+  max-width: $max-width;
+  @extend .mx-auto;
 }
 
 h1, h2, .h1, .h2 {

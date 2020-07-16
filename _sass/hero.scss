@@ -3,11 +3,12 @@
 		@extend .content;
 		padding-bottom: 5rem;
 		padding-top: 5rem;
+		color: white;
 	}
 
 	// From https://www.w3schools.com/howto/howto_css_hero_image.asp
 	&-image {
-		margin-bottom: 2rem;
+		@extend .mb-5;
 		@extend .mx-auto;
 		color: white;
 		@extend .bg-primary;

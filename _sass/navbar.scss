@@ -1,6 +1,11 @@
 .navbar {
-  font-family: $headings-font-family;
+	// TODO: IE doesn't support position: sticky, so we can't use it. But with it,
+	// we don't need to duplicate the lines below in the navbar.
+	// And we don't need to guess at a navbar height.
+	max-width: $max-width;
 	@extend .mx-auto;
+
+  font-family: $headings-font-family;
 
 	.navbar-nav {
 		.nav-item {
@@ -8,12 +13,6 @@
 			line-height: 1.25rem;
 		}
 	}
-}
-
-.navbar-top {
-  // This has to be min-height, not just height, so that expanding the collapsed
-  // menu on smaller devices has the right background colour.
-	min-height: $navbar-height;
 }
 
 @include media-breakpoint-up(md) {
@@ -25,12 +24,5 @@
 			justify-content: center;
 			text-align: center;
 		}
-	}
-}
-
-// TODO: Do I have breakpoints???
-@include media-breakpoint-up(xl) {
-	.navbar {
-		width: 1440px;
 	}
 }
