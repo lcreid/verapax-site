@@ -1,4 +1,7 @@
 .hero {
+	@extend .bg-primary;
+	@extend .mb-5;
+
 	&-content {
 		@extend .content;
 		padding-bottom: 5rem;
@@ -11,7 +14,6 @@
 		@extend .mb-5;
 		@extend .mx-auto;
 		color: white;
-		@extend .bg-primary;
 
 		/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($baseurl + "/assets/images/pacaya-1440x810.jpg");
