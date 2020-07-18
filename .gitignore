@@ -1,11 +1,10 @@
 _site
+_tmp
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
 .vagrant
 
-# Temporary file directory
-tmp/
 
 .sass-cache/
 Guardfile
