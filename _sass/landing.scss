@@ -29,12 +29,6 @@
 	@extend .mx-auto;
 }
 
-@include media-breakpoint-up(xl) {
-	.landing {
-		width: 1440px;
-	}
-}
-
 @include media-breakpoint-up(lg) {
 	.content {
 		// color: #FFFFFF;

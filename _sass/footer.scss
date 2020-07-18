@@ -10,9 +10,3 @@
 .footer {
   @extend .mx-auto;
 }
-
-@include media-breakpoint-up(xl) {
-	.footer {
-    width: 1440px;
-	}
-}
