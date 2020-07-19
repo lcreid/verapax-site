@@ -6,3 +6,8 @@
   height: 1em;
   filter: invert(100%);
 }
+
+.footer {
+  @extend .mx-auto;
+  max-width: $max-width;
+}
