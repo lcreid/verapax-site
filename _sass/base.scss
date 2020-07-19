@@ -1,6 +1,7 @@
 body {
   font-size: $font-size-base;
   padding-top: $navbar-height;
+  padding-bottom: 14rem;
   // The next two lines keep the site from getting too wide on really big screens
   max-width: $max-width;
   @extend .mx-auto;
@@ -23,6 +24,12 @@ label.required:after {
   height: 4px;
   width: 45px;
   background-color: $primary;
+}
+
+@include media-breakpoint-up(sm) {
+  body {
+    padding-bottom: 7.875rem;
+  }
 }
 
 @include media-breakpoint-up(md) {
