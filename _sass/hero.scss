@@ -1,27 +1,39 @@
 .hero {
 	@extend .bg-primary;
+	@extend .d-sm-flex;
 	@extend .mb-5;
+	@extend .mx-auto;
+	height: 24rem;
 
 	&-content {
 		@extend .content;
-		padding-bottom: 5rem;
-		padding-top: 5rem;
+		display: flex;
+		align-items: center;
 		color: white;
+		height: 100%;
 	}
 
 	// From https://www.w3schools.com/howto/howto_css_hero_image.asp
 	&-image {
-		@extend .mb-5;
-		@extend .mx-auto;
+		display: inline-block;
 		color: white;
+		width: 100%;
+		height: 100%;
 
 		/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($baseurl + "/assets/images/pacaya-1440x810.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($baseurl + "/assets/images/karla-en-galera.jpeg");
 
 		/* Position and center the image to scale nicely on all screens */
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
+	}
+
+	&-logo {
+		&-image {
+			height: 100%;
+			width: auto;
+		}
 	}
 }
