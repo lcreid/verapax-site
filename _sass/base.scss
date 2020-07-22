@@ -1,7 +1,13 @@
 body {
   font-size: $font-size-base;
   padding-top: $navbar-height;
+
+  // https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
+  min-height: 100vh;
+  display: block;
+  position: relative;
   padding-bottom: 14rem;
+
   // The next two lines keep the site from getting too wide on really big screens
   max-width: $max-width;
   @extend .mx-auto;

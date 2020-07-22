@@ -10,4 +10,8 @@
 .footer {
   @extend .mx-auto;
   max-width: $max-width;
+  // https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
