@@ -4,7 +4,8 @@
 	width: 100%;
 
 	&-content {
-		@extend .content;
+		@extend .mx-auto;
+		@extend .container;
 		color: white;
 	}
 
@@ -29,6 +30,12 @@
 		&-image {
 			height: 100%;
 			width: auto;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&-content {
+			width: 50rem;
 		}
 	}
 }
