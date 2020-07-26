@@ -11,7 +11,7 @@
 }
 
 .call-to-action-btn {
-	color: $primary;	// I would have liked to figure out how to do this in Bootstrap.
+	color: $primary; // I would have liked to figure out how to do this in Bootstrap.
 	font-weight: 500;
   height: 4rem;
 	margin-top: 2.125rem;
@@ -35,11 +35,12 @@
 
 @include media-breakpoint-up(lg) {
 	.content {
-		// color: #FFFFFF;
-		// height: 26.375rem;
-		// height: 12.75rem; // Original for margin.
-		// line-height: 5.375rem;
-		// padding-top: 13.625rem;
 		width: 65rem;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.w-md-50 {
+		width: 50% !important; // Because Bootstrap makes this important, I do too.
 	}
 }
