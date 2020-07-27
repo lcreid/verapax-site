@@ -33,6 +33,10 @@
 	@extend .mx-auto;
 }
 
+.service-heading {
+	min-height: 2.4em;
+}
+
 @include media-breakpoint-up(lg) {
 	.content {
 		width: 65rem;
