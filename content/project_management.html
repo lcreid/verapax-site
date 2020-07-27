@@ -3,9 +3,19 @@ layout: home
 title: Project Management
 ---
 
-<div class="hero d-flex align-items-center">
-  <div class="hero-content">
-    <h1>{{ page.title }}</h1>
+<div class="hero mb-5">
+  <div class="d-flex align-items-center h-100">
+    <div class="hero-image h-100 w-100 d-flex align-items-center">
+      <div class="hero-content mx-auto">
+        <div>
+          <h1>{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="hero-logo d-none d-sm-block">
+      <img src="{{ "assets/images/logo-verapax-text-light.png" | relative_url }}" alt="Verapax logo"
+        class="hero-logo-image p-2">
+    </div>
   </div>
 </div>
 
@@ -19,9 +29,10 @@ title: Project Management
     and proven experience in the use of relevant software applications
     such as Microsoft Project, Excel, and Open Source to document and track project information.</p>
 
-    {% include separator.html %}
+  {% include separator.html %}
 
-    <h2>Planning and Project Development</h2>
+  <h3>Planning and Project Development</h3>
+  <div class="underline w-100 mb-2"></div>
   <p>We use tools and analytical approaches to help your organization or group
     draft a comprehensive project charter including high-level requirements,
     project objectives, assumptions, constraints, approach, roles and responsibilities, and acceptance criteria.
@@ -34,9 +45,10 @@ title: Project Management
     We will provide you with project reports
     and any other documentation you may require for monitoring and evaluation and decision-making purposes.</p>
 
-    {% include separator.html %}
+  {% include separator.html %}
 
-  <h2>Project Execution and Controlling</h2>
+  <h3>Project Execution and Controlling</h3>
+  <div class="underline w-100 mb-2"></div>
   <p>Our consultants understand your need to work within the criteria of your organization or project sponsor;
     we will work with you and your project team to respond to the need or expectations of your advisory committees,
     stakeholders, community partners and project beneficiaries.
@@ -49,9 +61,10 @@ title: Project Management
     updating the project plan;
     and taking corrective action as necessary.</p>
 
-    {% include separator.html %}
+  {% include separator.html %}
 
-  <h2>Risk Management</h2>
+  <h3>Risk Management</h3>
+  <div class="underline w-100 mb-2"></div>
   <p>We will manage project risks through identification, analysis, response development, and monitoring and control.
     Our services also include: management of project quality through quality planning,
     quality assurance and control;
@@ -61,9 +74,10 @@ title: Project Management
     tracking and reporting project performance.
     We will develop project reports and presentations.</p>
 
-    {% include separator.html %}
+  {% include separator.html %}
 
-  <h2>Project Closing</h2>
+  <h3>Project Closing</h3>
+  <div class="underline w-100 mb-2"></div>
   <p>The Verapax team can perform project closing processes including audits,
     evaluations,
     outcome or deliverable verification,
