@@ -1,5 +1,5 @@
 # To run from a remote Docker container definition:
-# export JEKYLL_VERSION=3.8.5
+# export JEKYLL_VERSION=4.2.2
 # docker run -p 4000:4000 --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
 
 # This was useful for Docker:
