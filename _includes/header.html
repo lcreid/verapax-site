@@ -1,43 +1,59 @@
 <nav class="navbar navbar-top navbar-expand-md navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="{% link index.html %}">
-    <!-- <img src="{{ "assets/images/logo-verapax-31x50.png" | relative_url }}" alt="Verapax Logo" class="logo bg-white"> -->
-    Verapax
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% link index.html %}">
+      <!-- <img src="{{ "assets/images/logo-verapax-31x50.png" | relative_url }}" alt="Verapax Logo" class="logo bg-white"> -->
+      Verapax
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
     aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div id="navbar" class="collapse navbar-collapse w-100">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link mx-md-1" href="{% link index.html %}">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-md-1" href="{% link approach-and-values.html %}">Approach and Values</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-md-1" href="{% link content/about_us.html %}">About Us</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" role="button" data-toggle="dropdown"
+    <div id="navbar" class="collapse navbar-collapse w-100">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link mx-md-1" href="{% link index.html %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-md-1" href="{% link approach-and-values.html %}">Approach and Values</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-md-1" href="{% link content/about_us.html %}">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" role="button" data-bs-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          Services
-        </a>
-        <div class="dropdown-menu" aria-labelledby="servicesMenu">
-          <a class="nav-link mx-md-1" href="{% link services.html %}">Overview</a>
-          <a class="nav-link mx-md-1" href="{% link content/monitoring_and_evaluation.html %}">Monitoring and
-            Evaluation</a>
-          <a class="nav-link mx-md-1" href="{% link content/organizational_development.html %}">Organizational
-            Development</a>
-          <a class="nav-link mx-md-1" href="{% link content/visualizations_and_communications.html %}">Visualizations
-            and Communications</a>
-          <a class="nav-link mx-md-1" href="{% link content/project_management.html %}">Project Management</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-md-1" href="{% link content/contact.html %}">Contact Us</a>
-      </li>
-    </ul>
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesMenu">
+            <li>
+              <a class="dropdown-item mx-md-1" href="{% link services.html %}">Overview</a>
+            </li>
+            <li>
+              <a class="dropdown-item mx-md-1" href="{% link content/monitoring_and_evaluation.html %}">
+              Monitoring and Evaluation
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item mx-md-1" href="{% link content/organizational_development.html %}">
+              Organizational Development
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item mx-md-1" href="{% link content/visualizations_and_communications.html %}">Visualizations
+              and Communications
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item mx-md-1" href="{% link content/project_management.html %}">
+              Project Management
+              </a>
+            </li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link mx-md-1" href="{% link content/contact.html %}">Contact Us</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
