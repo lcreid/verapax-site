@@ -1,13 +1,20 @@
-<!-- Changes that affect the height need to be reflects in `base.scss` and/or `variables.scss -->
+<!-- Changes that affect the height need to be reflected in `base.scss` and/or `variables.scss -->
 <div class="bg-primary text-white footer">
-  <footer class="text-center py-2">
-    <div class="d-sm-flex justify-content-around align-items-center py-2">
-      <div class="pb-2">
+  <footer class="container-xxl text-center">
+    <div class="d-sm-flex justify-content-around align-items-center">
+      <div class="pb-2 pb-sm-0">
         <a class="navbar-brand" href="{% link index.html %}">
           <div class="h3 text-white">Verapax</div>
         </a>
+        <div class="text-white footer-text">
+          210 - 128 West Hastings St. Vancouver BC  V6B 1G8
+        </div>
+        <div class="footer-text">
+          © 2022 Verapax Solutions Inc. | Website by
+          <a href="https://jadesystems.ca" class="text-light">Jade Systems Inc</a>
+        </div>
       </div>
-      <div class="pb-2">
+      <div class="pb-2 pb-sm-0">
         <a href="https://twitter.com/{{ site.twitter_username }}" class="text-light mx-3">
           <img src="{% link assets/images/twitter-brands.svg %}" alt="twitter" class="inline-icon invert">
         </a>
@@ -25,13 +32,9 @@
           <img src="{% link assets/images/skype-brands.svg %}" alt="Skype" class="inline-icon invert">
         </a>
       </div>
-      <div class="py-2">
+      <div class="pb-2 pb-sm-0">
         <a class="btn btn-sm btn-secondary" href="{% link content/contact.html %}">Contact Us</a>
       </div>
-    </div>
-    <div class="pb-2 footer-text">
-      © 2022 Verapax Solutions Inc. | Website by
-      <a href="https://jadesystems.ca" class="text-light">Jade Systems Inc</a>
     </div>
   </footer>
 </div>
