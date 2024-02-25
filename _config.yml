@@ -1,6 +1,6 @@
 # To run from a remote Docker container definition:
-# export JEKYLL_VERSION=4.2.2
-# docker run -p 4000:4000 --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
+# docker compose exec jekyll bundle install
+# docker compose exec jekyll jekyll serve -l -H 0.0.0.0
 
 # This was useful for Docker:
 # https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
@@ -29,6 +29,8 @@ exclude:
   - package-lock.json
   - Vagrantfile
   - yarn.lock
+  - .devcontainer/
+  - node_modules/
 
 include:
   - node_modules/@popperjs/core/dist/umd/popper.min.js
