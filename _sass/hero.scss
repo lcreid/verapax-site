@@ -4,8 +4,7 @@
 	width: 100%;
 
 	&-content {
-		@extend .mx-auto;
-		@extend .container;
+		@extend .container-xl;
 		color: white;
 	}
 
@@ -33,11 +32,11 @@
 		}
 	}
 
-	@include media-breakpoint-up(lg) {
-		&-content {
-			width: 50rem;
-		}
-	}
+	// @include media-breakpoint-up(lg) {
+	// 	&-content {
+	// 		width: 50rem;
+	// 	}
+	// }
 }
 
 .contacts-image {

@@ -13,35 +13,35 @@
 .call-to-action-btn {
 	color: $primary; // I would have liked to figure out how to do this in Bootstrap.
 	font-weight: 500;
-  height: 4rem;
+	height: 4rem;
 	margin-top: 2.125rem;
-  width: 16rem;
-  border-radius: 2rem;
-  // background-color: #FFFFFF;
+	width: 16rem;
+	border-radius: 2rem;
+	// background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .content {
-	@extend .mx-auto;
-	@extend .container-md;
+	// @extend .mx-auto;
+	@extend .container-xl;
 }
 
 .landing {
 	margin-bottom: 2rem;
-	@extend .mx-auto;
+	// @extend .mx-auto;
 }
 
 .service-heading {
 	min-height: 2.4em;
 }
 
-@include media-breakpoint-up(lg) {
-	.content {
-		width: 65rem;
-	}
-}
+// @include media-breakpoint-up(lg) {
+// 	.content {
+// 		width: 65rem;
+// 	}
+// }
 
 @include media-breakpoint-up(md) {
 	.w-md-50 {
