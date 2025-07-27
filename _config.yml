@@ -1,6 +1,6 @@
 # To run from a remote Docker container definition:
-# docker compose exec jekyll bundle install
-# docker compose exec jekyll jekyll serve -l -H 0.0.0.0
+# docker compose up -d
+# docker compose exec jekyll foreman start
 
 # This was useful for Docker:
 # https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
@@ -22,15 +22,18 @@ sass:
     - node_modules
 
 exclude:
+  - .devcontainer/
+  - .devcontainer.json
+  - compose.yml
   - LICENSE
   - Makefile
-  - README.md
-  - package.json
+  - node_modules/
   - package-lock.json
+  - package.json
+  - Procfile*
+  - README.md
   - Vagrantfile
   - yarn.lock
-  - .devcontainer/
-  - node_modules/
 
 include:
   - node_modules/@popperjs/core/dist/umd/popper.min.js
