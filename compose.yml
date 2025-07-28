@@ -8,5 +8,5 @@ services:
     user: 1000:1000
     ports:
       - "4000:4000"
-      - "35729:35729"
+      - "35729:35729" # Live reload port
     # command: jekyll serve -H 0.0.0.0 -w --livereload

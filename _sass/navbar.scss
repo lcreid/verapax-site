@@ -1,28 +1,32 @@
+@use "variables";
+@use "customize-bootstrap";
+@use "bootstrap/scss/bootstrap";
+
 .navbar {
-	// TODO: IE doesn't support position: sticky, so we can't use it. But with it,
-	// we don't need to duplicate the lines below in the navbar.
-	// And we don't need to guess at a navbar height.
-	max-width: $max-width;
-	@extend .mx-auto;
+  // TODO: IE doesn't support position: sticky, so we can't use it. But with it,
+  // we don't need to duplicate the lines below in the navbar.
+  // And we don't need to guess at a navbar height.
+  max-width: variables.$max-width;
+  @extend .mx-auto;
 
-  font-family: $headings-font-family;
+  font-family: customize-bootstrap.$headings-font-family;
 
-	.navbar-nav {
-		.nav-item {
-			font-size: $nav-and-footer-font;
-			line-height: 1.25rem;
-		}
-	}
+  .navbar-nav {
+    .nav-item {
+      font-size: variables.$nav-and-footer-font;
+      line-height: 1.25rem;
+    }
+  }
 }
 
-@include media-breakpoint-up(md) {
-	.navbar-nav {
-		.nav-item {
-			// Center horizontally and vertically
-			align-items: center;
-			display: flex;
-			justify-content: center;
-			text-align: center;
-		}
-	}
+@include bootstrap.media-breakpoint-up(md) {
+  .navbar-nav {
+    .nav-item {
+      // Center horizontally and vertically
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
 }

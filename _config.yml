@@ -20,10 +20,16 @@ sass:
   load_paths:
     - _sass
     - node_modules
+  silence_deprecations:
+    - color-functions
+    - global-builtin
+    - import
 
 exclude:
   - .devcontainer/
   - .devcontainer.json
+  - .vscode/
+  - .vscode-server/
   - compose.yml
   - LICENSE
   - Makefile

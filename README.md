@@ -6,15 +6,17 @@ With Docker, use my Rails app and the included `compose.yml` file:
 
 ```bash
 docker compose up -d
-docker compose exec jekyll foreman start
+docker compose exec jekyll jekyll server -H 0.0.0.0 --livereload
 ```
 
 To see draft blog posts, too:
 
 ```bash
 docker compose up -d
-docker compose exec jekyll foreman -f Procfile.drafts start
+docker compose exec jekyll jekyll server -H 0.0.0.0 --livereload --drafts
 ```
+
+I thought I needed `foreman` and a `Procfile` for a while, but Jekyll does all the SASS itself. I suppose one could figure out a more complicated build pipeline if one had to, but later for that.
 
 I used to use a standard Docker Jekyll container, but this doesn't seem to work well anymore:
 

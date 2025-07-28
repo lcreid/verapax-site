@@ -1,8 +1,9 @@
 // All the variables are here: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+@use "variables";
 
-$primary:       #3b2c56;  // A colour I picked out of the Verapax logo.
+$primary: #3b2c56; // A colour I picked out of the Verapax logo.
 // $primary:       #8c2a57;  // A colour I picked out of the Verapax logo.
-$secondary:     #4eae35;  // A colour from http://paletton.com/#uid=25g0u0kmpkUc9v9hFpJrDfMyyaq
+$secondary: #4eae35; // A colour from http://paletton.com/#uid=25g0u0kmpkUc9v9hFpJrDfMyyaq
 // $secondary:     #2D4C00;  // A colour from http://paletton.com/#uid=25g0u0kmpkUc9v9hFpJrDfMyyaq
 // $success:       $green;
 // $info:          $cyan;
@@ -13,13 +14,17 @@ $secondary:     #4eae35;  // A colour from http://paletton.com/#uid=25g0u0kmpkUc
 
 $enable-caret: false; // This turns off the caret on drop-down menus.
 
-$font-family-base: 'Istok Web', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$headings-font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: "Istok Web", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1.375rem;
-$font-size-lg:                1.5rem;
-$font-size-sm:                1.25rem;
+$font-size-base: 1.375rem;
+$font-size-lg: 1.5rem;
+$font-size-sm: 1.25rem;
 //
 // $font-weight-lighter:         lighter !default;
 // $font-weight-light:           300 !default;
@@ -57,16 +62,16 @@ $font-size-sm:                1.25rem;
 $jumbotron-bg: $primary;
 
 // Get better contrast for the navbar.
-$navbar-dark-color:                 #ffffff;
-$navbar-dark-hover-color:           rgba(#ffffff, .75);
+$navbar-dark-color: #ffffff;
+$navbar-dark-hover-color: rgba(#ffffff, 0.75);
 // TODO: Make the active work so you know which page you're on.
-$navbar-dark-active-color:          #ffffff;
-$navbar-dark-disabled-color:        rgba(#ffffff, .5);
+$navbar-dark-active-color: #ffffff;
+$navbar-dark-disabled-color: rgba(#ffffff, 0.5);
 // $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-dark-toggler-border-color:  rgba(#ffffff, .1);
+$navbar-dark-toggler-border-color: rgba(#ffffff, 0.1);
 
-$dropdown-bg:                       $primary;
-$dropdown-link-color:               $navbar-dark-color;
-$dropdown-font-size:                $nav-and-footer-font;
+$dropdown-bg: $primary;
+$dropdown-link-color: $navbar-dark-color;
+$dropdown-font-size: variables.$nav-and-footer-font;
 
-$input-btn-border-width:            2px;
+$input-btn-border-width: 2px;

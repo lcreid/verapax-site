@@ -1,6 +1,9 @@
+@use "variables";
+@use "bootstrap/scss/bootstrap";
+
 body {
-  font-size: $font-size-base;
-  padding-top: $navbar-height;
+  font-size: bootstrap.$font-size-base;
+  padding-top: variables.$navbar-height;
 
   // https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
   min-height: 100vh;
@@ -9,11 +12,14 @@ body {
   padding-bottom: 14rem;
 
   // The next two lines keep the site from getting too wide on really big screens
-  max-width: $max-width;
+  max-width: variables.$max-width;
   @extend .mx-auto;
 }
 
-h1, h2, .h1, .h2 {
+h1,
+h2,
+.h1,
+.h2 {
   font-weight: bold;
 }
 
@@ -29,22 +35,22 @@ label.required:after {
 .underline {
   height: 4px;
   width: 45px;
-  background-color: $primary;
+  background-color: bootstrap.$primary;
 }
 
-@include media-breakpoint-up(sm) {
+@include bootstrap.media-breakpoint-up(sm) {
   body {
     padding-bottom: 7.875rem;
   }
 }
 
-@include media-breakpoint-up(md) {
+@include bootstrap.media-breakpoint-up(md) {
   html {
     font-size: 14px;
   }
 }
 
-@include media-breakpoint-up(xl) {
+@include bootstrap.media-breakpoint-up(xl) {
   html {
     font-size: 16px;
   }
