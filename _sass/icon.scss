@@ -1,5 +1,4 @@
 @use "variables";
-@use "customize-bootstrap";
 @use "bootstrap/scss/bootstrap";
 
 .icon-background {
@@ -20,7 +19,7 @@
   @extend .w-100;
   // @extend .h-100;
   @extend .my-auto;
-  color: customize-bootstrap.$primary;
+  color: bootstrap.$primary;
   font-family: bootstrap.$headings-font-family;
   @extend .h4;
   font-weight: 500;

@@ -9,7 +9,6 @@ $_headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 @use "variables";
-@use "customize-bootstrap";
 @use "bootstrap/scss/bootstrap" with (
   $primary: #3b2c56,
   // A colour I picked out of the Verapax logo.

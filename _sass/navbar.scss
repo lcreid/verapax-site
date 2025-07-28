@@ -1,5 +1,4 @@
 @use "variables";
-@use "customize-bootstrap";
 @use "bootstrap/scss/bootstrap";
 
 .navbar {
@@ -9,7 +8,7 @@
   max-width: variables.$max-width;
   @extend .mx-auto;
 
-  font-family: customize-bootstrap.$headings-font-family;
+  font-family: bootstrap.$headings-font-family;
 
   .navbar-nav {
     .nav-item {
