@@ -24,6 +24,7 @@ sass:
     - color-functions
     - global-builtin
     - import
+    - mixed-decls
 
 exclude:
   - .devcontainer/
