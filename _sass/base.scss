@@ -23,15 +23,6 @@ h2,
   font-weight: bold;
 }
 
-html {
-  font-size: 12px;
-}
-
-label.required:after {
-  content: " *";
-  @extend .text-danger;
-}
-
 .underline {
   height: 4px;
   width: 45px;
