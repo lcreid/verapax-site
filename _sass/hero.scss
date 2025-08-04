@@ -3,7 +3,7 @@
 
 .hero {
   @extend .bg-primary;
-  height: 24rem;
+  height: 48rem;
   width: 100%;
 
   &-content {
@@ -17,7 +17,7 @@
 
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/images/karla-en-galera.jpeg");
+      url("/assets/images/Gall–Peters_projection_SW.jpg");
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
