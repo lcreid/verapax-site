@@ -31,6 +31,12 @@
   @extend .container-lg;
 }
 
+.image-box {
+  min-height: 24rem;
+  @extend .border;
+  @extend .border-primary;
+}
+
 .landing {
   margin-bottom: 2rem;
   // @extend .mx-auto;
