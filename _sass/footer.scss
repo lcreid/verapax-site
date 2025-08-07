@@ -15,6 +15,7 @@
 
 .footer {
   @extend .mx-auto;
+  height: variables.$navbar-height;
   max-width: variables.$max-width;
   // https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
   width: 100%;
