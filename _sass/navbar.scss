@@ -2,10 +2,8 @@
 @use "bootstrap/scss/bootstrap";
 
 .navbar {
-  // TODO: IE doesn't support position: sticky, so we can't use it. But with it,
-  // we don't need to duplicate the lines below in the navbar.
-  // And we don't need to guess at a navbar height.
   max-width: variables.$max-width;
+  height: variables.$navbar-height;
   @extend .mx-auto;
 
   font-family: bootstrap.$headings-font-family;
