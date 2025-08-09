@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.3"
+    "bootstrap": "^5.3",
+    "bootstrap-icons": "^1.13.1"
   },
   "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
