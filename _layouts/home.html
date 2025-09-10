@@ -1,15 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
-    <section class="mb-5">
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include header.html %}
+  <div id="footer-to-bottom">
+    <section class="push-down-content">
       {{ content }}
     </section>
-    {% include footer.html %}
-    <script src="{{ '/node_modules/@popperjs/core/dist/umd/popper.min.js' | relative_url }}"></script>
-    <script src="{{ '/node_modules/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
-  </body>
+    <section>
+      {% include footer.html %}
+    </section>
+  </div>
+  <script src="{{ '/node_modules/@popperjs/core/dist/umd/popper.min.js' | relative_url }}"></script>
+  <script src="{{ '/node_modules/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
+</body>
+
 </html>

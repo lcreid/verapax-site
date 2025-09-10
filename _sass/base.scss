@@ -3,17 +3,15 @@
 
 body {
   font-size: bootstrap.$font-size-base;
-  padding-top: variables.$navbar-height;
-
-  // https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551
-  min-height: 100vh;
-  display: block;
-  position: relative;
-  padding-bottom: 14rem;
 
   // The next two lines keep the site from getting too wide on really big screens
   max-width: variables.$max-width;
   @extend .mx-auto;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 h1,
@@ -27,12 +25,6 @@ h2,
   height: 4px;
   width: 45px;
   background-color: bootstrap.$primary;
-}
-
-@include bootstrap.media-breakpoint-up(sm) {
-  body {
-    padding-bottom: 7.875rem;
-  }
 }
 
 @include bootstrap.media-breakpoint-up(md) {
@@ -102,4 +94,21 @@ h2,
   padding: 0.25rem 1rem;
   height: 6rem;
   width: auto;
+}
+
+// https://matthewjamestaylor.com/bottom-footer
+#footer-to-bottom {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+
+  /* fallback height */
+  min-height: 100vh;
+
+  /* new small viewport height for modern browsers */
+  min-height: 100svh;
+}
+
+.push-down-content {
+  padding-top: variables.$navbar-height;
 }
