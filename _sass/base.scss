@@ -112,3 +112,16 @@ h2,
 .push-down-content {
   padding-top: variables.$navbar-height;
 }
+
+.footer-text {
+  font-size: variables.$mice-font;
+}
+
+.footer {
+  @extend .mx-auto;
+  max-width: variables.$max-width;
+
+  a:link {
+    text-decoration: none;
+  }
+}
