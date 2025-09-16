@@ -24,3 +24,7 @@ I used to use a standard Docker Jekyll container, but this doesn't seem to work 
 JEKYLL_VERSION=4.2.2 # Or whichever version you want
 docker run -p 4000:4000 --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve -H 0.0.0.0 -w
 ```
+
+## Deploy
+
+With FileZilla, copy the contents of `_site` to the destination.
